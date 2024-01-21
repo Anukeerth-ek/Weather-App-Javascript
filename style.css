@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.weather-app {
+    background-color: white;
+    max-width: 28%;
+    max-height: 90vh;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #3498db;
+    
+    border-bottom-left-radius: 24px;
+    border-top-left-radius: 24px;
+    font-size: 1rem;
+    height: 3.5rem;
+}
+.city-input:focus {
+    border: 1px solid #2980b9;
+}
+.search-btn {
+    background-color: #3498db;
+    border: none;
+    padding: 14px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all 175ms ease-in-out 0s;
+}
+
+.search-btn:hover {
+    background-color: #2980b9;
+  
+}
+
+.city-date-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city-date-section .city {
+    font-size: 2.5rem;
+    opacity: 0.9;
+}
+
+.city-date-section .date {
+    background-color: #ecf0f1;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border-color: #3498db;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.temperature-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temperature-info .temp {
+    font-size: 8rem;
+}
+
+.temperature-info .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temperature-info .description i {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.temperature-info .description span {
+    font-size: 1.5rem;
+    color: #444
+}
+
+.additional-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info {
+    /* background-color: #ecf0f1; */
+    width: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+}
+
+.additional-info .material-icons {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+    text-align: center;
+}
+
+/* MEDIA QUERIES FOR MOBILE VIEW */
+
+@media (min-width: 275px ) and (max-width: 585px){
+    .weather-app {
+        background-color: white;
+        max-width: 90%;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 15px;
+    }
+    .wind-info,
+.humidity-info,
+.visibility-info {
+    /* background-color: #ecf0f1; */
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+}
+.additional-info .material-icons {
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+   
+}
+
+/* MEDIA QUERIES FOR IPAD VIEW */
+
+@media (min-width: 986px) and (max-width: 1235px) {
+    .weather-app {
+        background-color: white;
+        max-width: 38%;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 15px;
+    }
+ 
+
+}
+/* MEDIA QUERIES FOR IPAD VIEW */
+
+@media (min-width: 586px) and (max-width: 986px) {
+    .weather-app {
+        background-color: white;
+        min-width: 48%;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 15px;
+        
+    }
+}
+
+@media (min-width: 586px) and (max-width: 706px){
+    
+    input[type="text"] {
+        flex: 1;
+        max-width: 170px;
+        border: 2px solid #3498db;
+        
+        border-bottom-left-radius: 24px;
+        border-top-left-radius: 24px;
+        font-size: 1rem;
+        height: 3.5rem;
+    }
+}
